@@ -1,10 +1,10 @@
 def prime?(number)
   if !number.integer?
-    false
+    return false
   elseif number < 2
-    false
+    return false
   elsif number == 2
-    true
+    return true
   else (2..number - 1).each {|int| return false if number % int == 0}
   end
 end
