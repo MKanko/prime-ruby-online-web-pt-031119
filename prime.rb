@@ -5,8 +5,8 @@ def prime?(number)
     result = (2..number - 1).collect {|int| number % int == 0}
     !result.include?(true)
   else
-    return false 
+    return false
 
   end
-  
+
 end
