@@ -7,7 +7,5 @@ def prime?(number)
     !test_num_array.include?(true)
   else
     return false
-
   end
-
 end
