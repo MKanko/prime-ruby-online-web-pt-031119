@@ -1,10 +1,9 @@
+require 'pry'
+
 def prime?(number)
-  if !number.integer?
-    return false
-  elseif number < 2
-    return false
-  elsif number == 2
-    return true
-  else (2..number - 1).each {|int| return false if number % int == 0}
-  end
-end
+  if number >= 2
+    result = (2..number - 1).each {|int| number % int == 0}
+    !result.include?(true)
+    binding.pry 
+  end 
+end 
